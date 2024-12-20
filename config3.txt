@@ -1,0 +1,5 @@
+;Network configuration
+set x = 10
+host => "localhost",
+port => 8080,
+retry => @{+ x 20}

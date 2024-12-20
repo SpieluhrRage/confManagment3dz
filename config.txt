@@ -1,0 +1,35 @@
+; Однострочный комментарий
+
+{#
+Это многострочный комментарий.
+Он может занимать несколько строк.
+#}
+
+; Установка констант
+set x = 14
+set name = "Timur"
+set value = @{+ x 8} ; 42 + 8 = 50
+set negative = -15
+; Основная структура
+person => table(
+    name => "Timur", 
+    age => @{+ x 5}, 
+    traits => [ "intelligent", "curious", @{abs negative} ],  ; Последнее значение - модуль отрицательного числа
+    address => table(
+        city => "Moscow",
+        postal_code => 123456,
+        coords => table(
+            latitude => 55.7558,
+            longitude => 37.6173
+        )
+    ),
+    scores => [100, @{sqrt x}, 200],  ; sqrt(42) ≈ 6.48
+    preferences => table(
+        music => "Rock",
+        books => "Science Fiction",
+        hobbies => [ "coding", "gaming", "reading" ]
+    )
+)
+
+; Ещё один словарь с массивом
+

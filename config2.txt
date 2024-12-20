@@ -1,0 +1,5 @@
+marks => table(
+    student1 => 1,
+    student2 => 3,
+    student3 => [5, 4, 3]
+)
